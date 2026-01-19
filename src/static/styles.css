@@ -158,11 +158,25 @@ footer {
 }
 
 .participants ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  color: #555;
+  list-style-type: none;
+  padding: 0;
 }
 
 .participants li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 5px;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: darkred;
 }
